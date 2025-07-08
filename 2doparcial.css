@@ -1,0 +1,113 @@
+/* Fuentes y base */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-cc84-61fa-b1d4-568112ded56d/raw?se=2025-07-08T07%3A17%3A06Z&sp=r&sv=2024-08-04&sr=b&scid=9c992bdb-8297-50d4-bd5b-f3cc3629a359&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-07T21%3A51%3A20Z&ske=2025-07-08T21%3A51%3A20Z&sks=b&skv=2024-08-04&sig=Tr4XdlpeL7m%2BW4F6Vqu47xOjAAKuCYsCVzu6PYyj7ds%3D);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffae42 !important;
+  color: #fff !important;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Hover en enlaces */
+a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f5f5f5;
+}
+
+.dark-mode .navbar,
+.dark-mode footer,
+.dark-mode .bg-dark,
+.dark-mode .modal-content {
+  background-color: #1e1e1e !important;
+  color: #f5f5f5 !important;
+}
+
+.dark-mode .card {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+/* Iframes responsivos */
+.ratio iframe {
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Íconos redes */
+.bi {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.bi:hover {
+  transform: scale(1.2);
+  color: #ffc107;
+}
